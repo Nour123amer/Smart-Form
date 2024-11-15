@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+
+<body class="d-flex justify-content-center mt-5   text-center">
+
+    <div class="card p-4 ">
+        <h2 class="mb-3 display-5">Smart Login System</h2>
+        <form>
+
+            <div class="mb-3">
+
+                <input type="text" oninput="validateName()" class="form-control in-valid name " id="inputName"
+                    placeholder="Enter your name">
+            </div>
+            <p class="error-message text-danger d-none errorMessageName">Name must start with uppercase followed by 3
+                letters at least.</p>
+
+            <div class="mb-3">
+
+                <input type="email" oninput="validateEmail()" class="form-control in-valid email " id="inputEmail"
+                    placeholder="Enter your email">
+            </div>
+            <p class="error-message text-danger d-none errorMessageEmail">Email must includes letters ,numbers and
+                special characters.</p>
+
+            <div class="mb-3 row">
+
+                <div>
+                    <input type="password" oninput="validatePassword()" class="form-control in-valid password "
+                        id="inputPassword" placeholder="Enter your password">
+                </div>
+            </div>
+            <p class="error-message text-danger d-none errorMessagePassword">Password must start with uppercase and
+                contains numbers and special characters.</p>
+
+            <p class="errorMessage"></p>
+            <button class="mb-4" id="signupBtn" type="submit">Sign
+                Up</button>
+        </form>
+        <p class="text-white"> have an account? <a href="login.html" class="text-decoration-none text-white signUp">
+                Login</a></p>
+    </div>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="js/signup.js"></script>
+
+</body>
+
+</html>

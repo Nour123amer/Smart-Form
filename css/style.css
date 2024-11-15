@@ -1,0 +1,51 @@
+:root{
+    --mainColor:#24353f;
+    --fontColor: #17a2b8;
+}
+body{
+    background-color: #24353f;
+height: 100vh;
+}
+
+h2{
+    color: var(--fontColor);
+}
+
+.card{
+    background-color: var(--mainColor);
+    box-shadow: 10px 10px 10px 10px  #0e161b;
+    width: 50%;
+    height: 25rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: var(--mainColor);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  button{
+    background-color: var(--mainColor);
+    border: 1px solid var(--fontColor);
+    border-radius: 5px;
+    color: var(--fontColor);
+    padding: 7px;
+  }
+
+  button:hover{
+    background-color: var(--fontColor);
+    color: #fff;
+    transition: background-color 500ms;
+  }
